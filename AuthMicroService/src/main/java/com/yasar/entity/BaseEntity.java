@@ -14,7 +14,7 @@ import java.time.LocalDateTime;
 @Setter
 @SuperBuilder
 @MappedSuperclass
-public class BaseEntitiy {
+public class BaseEntity {
     private LocalDateTime createdDate;
     private LocalDateTime updatedDate;
 

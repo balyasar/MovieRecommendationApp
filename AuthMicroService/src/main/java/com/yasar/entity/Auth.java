@@ -14,7 +14,7 @@ import lombok.experimental.SuperBuilder;
 @SuperBuilder
 @Entity
 @Table(name = "tbl_auth")
-public class Auth extends BaseEntitiy {
+public class Auth extends BaseEntity {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY) // ID için otomatik artan bir HB sequence oluşturur.
     private Long id;

@@ -1,5 +1,6 @@
 package com.yasar.controller;
 
+import com.yasar.dto.request.ActivateRequestDto;
 import com.yasar.dto.request.RegisterRequestDto;
 import com.yasar.dto.response.RegisterResponseDto;
 import com.yasar.entity.Auth;
@@ -24,5 +25,12 @@ public class AuthController {
     public ResponseEntity<RegisterResponseDto> register(@RequestBody @Valid RegisterRequestDto dto) {
         return ResponseEntity.ok(service.register(dto));
     }
+
+    //activate --> aktivasyon kodu ile authun statüsünü pendingden active'e çekecek.
+    @PostMapping(ACTIVATE_STATUS)
+    public ResponseEntity<String> activateStatus(@RequestBody ActivateRequestDto dto) {
+        return ResponseEntity.ok(service.activateStatus(dto));
+    }
+
 
 }
