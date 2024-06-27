@@ -3,18 +3,15 @@ package com.yasar.entity;
 import jakarta.persistence.MappedSuperclass;
 import jakarta.persistence.PrePersist;
 import jakarta.persistence.PreUpdate;
-import lombok.AllArgsConstructor;
-import lombok.Builder;
-import lombok.Data;
-import lombok.NoArgsConstructor;
+import lombok.*;
 import lombok.experimental.SuperBuilder;
 
 import java.time.LocalDateTime;
 
-@Data // get, set, toString
-@AllArgsConstructor // parametreli constructorların tümü
-@NoArgsConstructor // default constructor
-@Builder
+@AllArgsConstructor
+@NoArgsConstructor
+@Getter
+@Setter
 @SuperBuilder
 @MappedSuperclass
 public class BaseEntitiy {

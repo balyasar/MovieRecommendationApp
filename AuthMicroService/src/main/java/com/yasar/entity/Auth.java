@@ -3,20 +3,16 @@ package com.yasar.entity;
 import com.yasar.utility.ERole;
 import com.yasar.utility.EStatus;
 import jakarta.persistence.*;
-import lombok.AllArgsConstructor;
-import lombok.Builder;
-import lombok.Data;
-import lombok.NoArgsConstructor;
+import lombok.*;
 import lombok.experimental.SuperBuilder;
 
-import java.time.LocalDateTime;
 
-@Data // get, set, toString
-@AllArgsConstructor // parametreli constructorların tümü
-@NoArgsConstructor // default constructor
-@Builder
-@Entity
+@AllArgsConstructor
+@NoArgsConstructor
+@Getter
+@Setter
 @SuperBuilder
+@Entity
 @Table(name = "tbl_auth")
 public class Auth extends BaseEntitiy {
     @Id
