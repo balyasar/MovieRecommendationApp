@@ -1,7 +1,5 @@
 package com.yasar.entity;
 
-import com.yasar.utility.ERole;
-import com.yasar.utility.EStatus;
 import jakarta.persistence.*;
 import lombok.*;
 import lombok.experimental.SuperBuilder;

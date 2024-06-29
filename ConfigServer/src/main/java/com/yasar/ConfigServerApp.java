@@ -2,12 +2,12 @@ package com.yasar;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
-import org.springframework.cloud.openfeign.EnableFeignClients;
+import org.springframework.cloud.config.server.EnableConfigServer;
 
 @SpringBootApplication
-@EnableFeignClients
-public class UserProfileMicroServiceApp {
+@EnableConfigServer
+public class ConfigServerApp {
     public static void main(String[] args) {
-        SpringApplication.run(UserProfileMicroServiceApp.class);
+        SpringApplication.run(ConfigServerApp.class);
     }
 }

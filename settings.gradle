@@ -1,4 +1,5 @@
 rootProject.name = 'MovieRecommendation'
 include 'AuthMicroService'
 include 'UserProfileMicroService'
+include 'ConfigServer'
 

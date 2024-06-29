@@ -18,4 +18,9 @@ public class AuthException extends RuntimeException {
         this.errorType = errorType;
     }
 
+    public AuthException(ErrorType errorType, String customMessage){
+        super(customMessage);
+        this.errorType=errorType;
+    }
+
 }

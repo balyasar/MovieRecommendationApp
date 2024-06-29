@@ -1,4 +1,4 @@
-package com.yasar.utility;
+package com.yasar.entity;
 
 public enum ERole {
     USER,
